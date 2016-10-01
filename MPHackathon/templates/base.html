@@ -1,57 +1,96 @@
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <!-- jQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- fullpage.js -->
-        <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
-    </head>
 
-    <body>
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <img alt="Brand" src="http://www.birminghammuseums.org.uk/assets/sponsor-millenium-point-trust-14f978bf3c88078d118397e5d95c91bd.svg" class="svg" fill="blue" height="50px">
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="#">One</a>
-                        </li>
-                        <li>
-                            <a href="#">Two</a>
-                        </li>
-                        <li>
-                            <a href="#">Three</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> <!-- /.navbar -->
-        <div class="container">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- fullpage.js -->
+    <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section">Section 1</div>
+        <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3>Title for panel1</h3>
+                    <h3 class="panel-title">Section 2</h3>
                 </div>
                 <div class="panel-body">
-                    Stuff for the panel
+                    Stuff
                 </div>
-            </div> <!-- /.panel -->
+            </div>        
+        </div>
+        <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3>Title for panel2</h3>
+                    <h3 class="panel-title">Section 3</h3>
                 </div>
                 <div class="panel-body">
-                    Stuff for the panel
+                    Stuff
                 </div>
-            </div> <!-- /.panel -->
-        </div> <!-- /.container -->
-    {{headline}}
-    </body> 
+            </div>        
+        </div>
+        <div class="section">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Section 4</h3>
+                </div>
+                <div class="panel-body">
+                    Stuff
+                </div>
+            </div>        
+        </div>
+        <div class="section">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Section 5</h3>
+                </div>
+                <div class="panel-body">
+                    Stuff
+                </div>
+            </div>        
+        </div>
+        <div class="section">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Section 6</h3>
+                </div>
+                <div class="panel-body">
+                    Stuff
+                </div>
+            </div>        
+        </div>
+        <div class="section">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Section 7</h3>
+                </div>
+            </div>        
+        </div>
+        <div class="section">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Section 8</h3>
+                </div>
+                <div class="panel-body">
+                    Stuff
+                </div>
+            </div>        
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage']
+            });
+        });
+    </script> {{headline}} </body>
 
 </html>
