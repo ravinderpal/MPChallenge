@@ -17,7 +17,7 @@
 {% load staticfiles %}
 <style type="text/css">
     body{
-        background-color: rgb(188, 176, 174);
+
     }
     #graph{
         background-image: url({% static "graph.png" %} );
@@ -30,6 +30,7 @@
     background-image: url({% static "0.png" %} );
     height:100%;
     width:100%;
+            background-color: rgb(188, 176, 174);
     background-repeat:no-repeat;
 }
     #control{
@@ -69,6 +70,20 @@
     top: 52%;
     color: rgb(72, 72, 72);
     text-shadow: 1px 0px 20px rgb(100, 100, 100);
+    }
+    #links{
+        left: 10px;
+    position: absolute;
+    }
+    #im1{
+        background-image:url({% static "6.png" %});
+    height: 500px;
+    width: 100%;
+    -webkit-transform: scale(0.8);
+    position:relative;
+        bottom: 40px;
+            left: 20px;
+    background-repeat:no-repeat;
     }
 </style>
 <body>
@@ -206,11 +221,17 @@ Millennium Point is owned by the registered charity Millennium Point Trust and s
 Board Members:
 1. Simon Topman, Chair Trustee - Millennium Point Trust, Director - Millennium Point Property Limited
 Simon is the CEO of The Acme Whistle Company, a local manufacturing firm. He has held a number of positions in the public, private and voluntary sectors both regional and national. He has wide interests that embrace the Arts, Business, Education and Regeneration.
+More information can be found at here: https://www.millenniumpoint.org.uk/our-board
+                    Below you will find detailed information regarding the number of people who enter the Millenium Point under different circumstances, please hover over the links below.</p>
+</div>
+                    <div id="ll">
+                        <div><a onmouseover="fuck()">School periods vs holidays</a> -
+                    <a onmouseover="fuck2()">Special events vs day to day</a> -
+                    <a onmouseover="fuck3()">BCU term-time vs non-term-time</a> -
+                    <a onmouseover="fuck4()">week days vs week ends</a></div>
+                    <div id="im1"></div>
 
-2. Mark Swallow, Trustee - Millennium Point Trust, Chair and Director - Millennium Point Property Limited
-Mark is a Chartered Surveyor with a degree in General Practice Surveying from Northumbria University. He has completed a term as a Judge for the Midlands & East Anglia Area of the British Council of Offices. He was a Director of Colliers Stewart Newiss and then Storey Sons and Parker in Newcastle before ending up as a Propriety Partner of Knight Frank until he retired from the Partnership in 2011.
-
-More information can be found at here: https://www.millenniumpoint.org.uk/our-board</p></div>
+</div>
                 </div>
             </div>        
         </div>
@@ -276,6 +297,26 @@ document.getElementById('main').style.backgroundImage="url({% static "5.png" %})
 function sho(){
 document.getElementById('main').style.backgroundImage="url({% static "0.png" %})";
 }
+
+</script>
+
+    <script>
+function fuck(){
+document.getElementById('im1').style.backgroundImage="url({% static "6.png" %} )";
+}
+
+function fuck2(){
+document.getElementById('im1').style.backgroundImage="url({% static "7.png" %})";
+}
+
+function fuck3(){
+document.getElementById('im1').style.backgroundImage="url({% static "8.png" %})";
+}
+
+function fuck4(){
+document.getElementById('im1').style.backgroundImage="url({% static "9.png" %})";
+}
+
 
 </script>
 <script>

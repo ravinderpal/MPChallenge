@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a5e2b47-96a8-4293-8784-938797682ab7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphs/school.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphs/special event.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphs/term time.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/graphs/weekdays.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MPHackathon/templates/base.html" afterPath="$PROJECT_DIR$/MPHackathon/templates/base.html" />
     </list>
     <ignored path="MPChallenge.iws" />
@@ -27,8 +30,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MPHackathon/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90986395">
-              <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.28061223">
+              <caret line="224" column="170" selection-start-line="224" selection-start-column="170" selection-end-line="224" selection-end-column="170" />
               <folding />
             </state>
           </provider>
@@ -563,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MPHackathon/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90986395">
-          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.28061223">
+          <caret line="224" column="170" selection-start-line="224" selection-start-column="170" selection-end-line="224" selection-end-column="170" />
           <folding />
         </state>
       </provider>
