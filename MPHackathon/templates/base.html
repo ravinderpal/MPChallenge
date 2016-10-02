@@ -2,6 +2,7 @@
 <html>
 
 <head>
+     <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -13,47 +14,170 @@
     <!-- fullpage.js -->
     <script src="https://cdn.jsdelivr.net/jquery.fullpage/2.5.9/jquery.fullPage.min.js"></script>
 </head>
+{% load staticfiles %}
+<style type="text/css">
+    body{
+        background-color: rgb(188, 176, 174);
+    }
+#main {
+    background-image: url({% static "0.png" %} );
+    height:100%;
+    width:100%;
+    background-repeat:no-repeat;
+}
+    #control{
+    font-size: 33px;
+            right: 10%;
+    top: 25%;
+    width:300px;
+    height:200px;
+    position: absolute;
 
+    }
+    #control a{
+          transition: all 0.2s ease-in;
+      text-decoration:none;
+    }
+    a:hover{
+	-webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 1px 0px 20px rgb(100, 100, 100);
+    }
+    #logo{
+    background-image:url({% static "logo.png" %});
+    height: 180px;
+    width: 400px;
+    position:absolute;
+        bottom: 40px;
+            left: 20px;
+    background-repeat:no-repeat;
+    }
+
+    #ftext{
+        right: 8%;
+    position: absolute;
+    width: 373px;
+    font-size: 22px;
+    top: 52%;
+    }
+</style>
 <body>
     <div id="fullpage">
-        <div class="section">Section 1</div>
+        <div class="section">
+<div id="main">
+    <div id="logo"></div>
+    <div id="ftext">
+        Behold! The iconic building within the heart of Birmingham,
+opened by the Queen Elizabeth II, Millennium Point.
+
+Please click a floor level to continue.
+
+    </div>
+<div id="control" onmouseleave="sho()">
+        <a href="#secondPage"><div onmouseover="showimage()" onclick="first()" id="1">Ground floor</div></a>
+       <a href="#thirdPage"><div onmouseover="showimage2()" id="1">1st floor</div></a>
+       <a href="#fourthPage"><div onmouseover="showimage3()" onclick="third()" id="1">2nd floor</div></a>
+       <a href="#fifthPage"><div onmouseover="showimage4()" onclick="fourth()" id="1">University link</div></a>
+</div>
+</div>
+
+        </div>
         <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Section 2</h3>
+                    <h3 class="panel-title">Ground floor</h3>
                 </div>
                 <div class="panel-body">
-                    Stuff
+                        <a href="#firstPage">
+                            <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+                        </a>
+                    <div id="firstGraph"></div>
+                    <div><p>
+
+
+Level 0: Atrium
+
+Natural light floods into the five-storey space of the Atrium makes for an
+impressive spectacle. When the venue is filled, the activity turns the heart of
+the millennium point into a bustling hive.
+The contemporary architecture gives the Atrium a neutral look perfect for any occasion.
+With a 44ft digital scree, this display is perfect for a range of content, from
+branding to promotional films.
+
+Approximate max dimensions:
+W: 20m, L: 40m, H:20m
+Approximate Area:
+200mx200m</p></div>
                 </div>
             </div>        
         </div>
         <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Section 3</h3>
-                </div>
-                <div class="panel-body">
-                    Stuff
+                    <h3 class="panel-title">1st floor</h3>
+                </div><div class="panel-body">
+                        <a href="#firstPage">
+                            <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+                        </a>
+                    <div id="secondGraph"></div>
+                                    <div><p>
+
+
+Level 1: Mezzanine
+
+Overlooking the central Atrium is the mezzanine, a perfect location for a drinks
+reception and arrivals during exhibitions, seminars and performances. With two
+entrances, this is one the most exciting areas within the Millennium Point.
+
+Approximate Maximum Dimensions
+w: 15m, L: 20m, H: 4m
+Approximate Area:
+200mx200m</p></div>
                 </div>
             </div>        
         </div>
         <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Section 4</h3>
+                    <h3 class="panel-title">2nd floor</h3>
                 </div>
                 <div class="panel-body">
-                    Stuff
+                        <a href="#firstPage">
+                            <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+                        </a>
+                    <div id="thirdGraph"></div>
+                                                        <div><p>
+
+Level 2:
+
+Located right next to the Thinktank Science Museum and Birmingham City University,
+this location offers great project space for your event, whilst offering a unique
+view of the Eastside City Park and the landmark Curzon Street Station building.
+
+Approximate Maximum dimensions:
+W: 15m L: 20m H: 4m
+Approximate Area:
+200mx200m</p></div>
                 </div>
             </div>        
         </div>
         <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Section 5</h3>
+                    <h3 class="panel-title">University link</h3>
                 </div>
                 <div class="panel-body">
-                    Stuff
+                        <a href="#firstPage">
+                            <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+                        </a>
+                    <div id="fourthGraph"></div>
+                                                                            <div><p>
+
+University Level:
+
+Millennium Point, home to several faculties of Birmingham City University, including
+lecture halls and teaching rooms. All of which are accessible space for your events.</p></div>
                 </div>
             </div>        
         </div>
@@ -63,6 +187,9 @@
                     <h3 class="panel-title">Section 6</h3>
                 </div>
                 <div class="panel-body">
+                                            <a href="#firstPage">
+                            <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+                        </a>
                     Stuff
                 </div>
             </div>        
@@ -94,6 +221,108 @@
                 anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage']
             });
         });
-    </script> {{headline}} </body>
+    </script>
+<script>
+function showimage(){
+document.getElementById('main').style.backgroundImage="url({% static "1.png" %} )";
+}
 
+function showimage2(){
+document.getElementById('main').style.backgroundImage="url({% static "2.png" %})";
+}
+
+function showimage3(){
+document.getElementById('main').style.backgroundImage="url({% static "3.png" %})";
+}
+
+function showimage4(){
+document.getElementById('main').style.backgroundImage="url({% static "5.png" %})";
+}
+
+function sho(){
+document.getElementById('main').style.backgroundImage="url({% static "0.png" %})";
+}
+
+</script>
+<script>
+var data = [
+  {
+      {% autoescape off %}
+
+    x:     {{dates}},
+
+    y:     {{other}},
+
+    {% endautoescape %}
+    type: 'scatter'
+  }
+];
+
+Plotly.newPlot('firstGraph', data);
+</script>
+
+<script>
+var data = [
+  {
+      {% autoescape off %}
+
+    x:     {{dates}},
+
+    y:     {{other3}},
+
+    {% endautoescape %}
+    type: 'scatter'
+  }
+];
+
+Plotly.newPlot('thirdGraph', data);
+</script>
+
+
+<script>
+var data = [
+  {
+      {% autoescape off %}
+
+    x:     {{dates}},
+
+    y:     {{other4}},
+
+    {% endautoescape %}
+    type: 'scatter'
+  }
+];
+
+Plotly.newPlot('fourthGraph', data);
+</script>
+
+<script>
+var trace1 = {
+      {% autoescape off %}
+
+    x:     {{dates}},
+
+    y:     {{other1}},
+
+    {% endautoescape %}
+  type: 'scatter',
+  name: 'Entrance 1'
+};
+
+var trace2 = {
+      {% autoescape off %}
+
+    x:     {{dates}},
+
+    y:     {{other2}},
+
+    {% endautoescape %}
+  type: 'scatter',
+    name: 'Entrance 2'
+};
+
+var data = [trace1, trace2];
+Plotly.newPlot('secondGraph', data);
+</script>
+</body>
 </html>
