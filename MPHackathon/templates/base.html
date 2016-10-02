@@ -19,6 +19,13 @@
     body{
         background-color: rgb(188, 176, 174);
     }
+    #graph{
+        background-image: url({% static "graph.png" %} );
+    background-image: url(/static/graph.png );
+    height: 500px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    }
 #main {
     background-image: url({% static "0.png" %} );
     height:100%;
@@ -60,12 +67,15 @@
     width: 373px;
     font-size: 22px;
     top: 52%;
+    color: rgb(72, 72, 72);
+    text-shadow: 1px 0px 20px rgb(100, 100, 100);
     }
 </style>
 <body>
     <div id="fullpage">
         <div class="section">
 <div id="main">
+    <div id="links"><a href="#sixthPage">Board Members</a> - <a href="#seventhPage">Advertisers</a> - <a href="#eighthPage">Staff</a></div>
     <div id="logo"></div>
     <div id="ftext">
         Behold! The iconic building within the heart of Birmingham,
@@ -184,34 +194,58 @@ lecture halls and teaching rooms. All of which are accessible space for your eve
         <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Section 6</h3>
+                    <h3 class="panel-title">Board Members</h3>
                 </div>
                 <div class="panel-body">
                                             <a href="#firstPage">
                             <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
                         </a>
-                    Stuff
+                    <div><p>Board Members:
+Millennium Point is owned by the registered charity Millennium Point Trust and serviced by its operating company Millennium Point Property Limited. Both organisations have their own Boards comprising either Trustees or Directors overseeing governance.
+
+Board Members:
+1. Simon Topman, Chair Trustee - Millennium Point Trust, Director - Millennium Point Property Limited
+Simon is the CEO of The Acme Whistle Company, a local manufacturing firm. He has held a number of positions in the public, private and voluntary sectors both regional and national. He has wide interests that embrace the Arts, Business, Education and Regeneration.
+
+2. Mark Swallow, Trustee - Millennium Point Trust, Chair and Director - Millennium Point Property Limited
+Mark is a Chartered Surveyor with a degree in General Practice Surveying from Northumbria University. He has completed a term as a Judge for the Midlands & East Anglia Area of the British Council of Offices. He was a Director of Colliers Stewart Newiss and then Storey Sons and Parker in Newcastle before ending up as a Propriety Partner of Knight Frank until he retired from the Partnership in 2011.
+
+More information can be found at here: https://www.millenniumpoint.org.uk/our-board</p></div>
                 </div>
             </div>        
         </div>
         <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Section 7</h3>
+                    <h3 class="panel-title">Advertisers</h3>
                 </div>
                 <div class="panel-body">
-                    Stuff
+                                                                <a href="#firstPage">
+                            <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+                        </a>
+                    <div><p>For Advertisers:
+
+The graph below shows the total number of people who came into the Millennium Point, through the 4 possible entrances, allowing you to
+see the best possible times to advertise to the various members of the public that frequently visit one of Birmingham’s most iconic buildings.
+For more information, contact us on info@millenniumpoint.org.uk.</p></div><div id="graph"></div>
                 </div>
             </div>        
         </div>
         <div class="section">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Section 8</h3>
+                    <h3 class="panel-title">Staff</h3>
                 </div>
                 <div class="panel-body">
-                    Stuff
-                </div>
+                                                                <a href="#firstPage">
+                            <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+                        </a>
+                    <div><p>For Staff only:
+
+The graph below indicates peak periods where an increase in temporary staff will be needed for the following years, this includes
+the popular Christmas period, and other large events throughout the year. Staff that would be needed include both Security and Cleaners.
+</p></div>
+                    <div id="graph"></div>                </div>
             </div>        
         </div>
     </div>
